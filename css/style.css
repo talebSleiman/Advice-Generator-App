@@ -1,0 +1,100 @@
+/* Globale Variables  */
+
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+/* Globale Rules  */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Start Main  */
+
+body {
+    background-color: var(--darkBlue);
+}
+
+main {
+    background-color: var(--darkGrayishBlue);
+    border-radius: 20px;
+    position: relative;
+}
+
+main .container {
+    width: 480px;
+    text-align: center;
+}
+
+h4 {
+    color: var(--neonGreen);
+    font-size: 10px;
+    letter-spacing: 5px;
+    padding: 20px 0;
+    font-weight: normal;
+}
+
+p {
+    color: var(--lightCyan);
+    font-weight: 800;
+    font-size: 28px;
+    padding: 10px 0 20px;
+}
+
+picture img {
+    padding: 10px 0 15px;
+}
+
+button {
+    background-color: var(--neonGreen);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 20px 6px var(--neonGreen);
+}
+
+@media (max-width: 767px) {
+    main .container {
+        width: 350px;
+    }
+}
+
+
+/* End Main  */
